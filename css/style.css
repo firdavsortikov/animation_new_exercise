@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: "yozz";
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "yozz";
+    padding: 20px;
+    font-weight: 550;
+}
+body {
+    background-color: rgb(199, 196, 196);
+    
+}
+.wrapper {
+    width: 67%;
+    margin:0 auto;
+    box-shadow: 0 0 10px;
+    padding: 20px;
+    position: relative;
+    margin-top: 2rem;
+    height: 750px;
+    background-color: rgb(250, 215, 248);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out r;
+}
+.wrapper:hover {
+    transform: skew(200deg);
+}
+.wrapper p {
+    color: white;
+    line-height: 22px;
+   
+}
+.wrapper:before, .wrapper:after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+   }
+.wrapper:before {
+    background-color: #2aa6b6;
+    box-shadow: 0 0 2px;
+    left: -5px;
+    top: 4px;
+    transform: rotate(-12deg);
+}
+.wrapper:after {
+    background: #9cafa1;
+    box-shadow: 0 0 6px;
+    right: -3px;
+    top: 1px;
+    transform: rotate(3deg);
+   }
+   .wrapper:before {
+       transform: rotate(7deg);
+   }
